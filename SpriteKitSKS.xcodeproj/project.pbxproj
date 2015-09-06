@@ -16,6 +16,9 @@
 		C652869F1B9CB0FB003777F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C652869E1B9CB0FB003777F8 /* Images.xcassets */; };
 		C65286A21B9CB0FB003777F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C65286A01B9CB0FB003777F8 /* LaunchScreen.xib */; };
 		C65286AE1B9CB0FB003777F8 /* SpriteKitSKSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C65286AD1B9CB0FB003777F8 /* SpriteKitSKSTests.m */; };
+		C65286B91B9CB179003777F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65286B81B9CB179003777F8 /* ViewController.m */; };
+		C65286BE1B9CB1BA003777F8 /* SpriteScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C65286BB1B9CB1BA003777F8 /* SpriteScene.m */; };
+		C65286BF1B9CB1BA003777F8 /* SpriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = C65286BD1B9CB1BA003777F8 /* SpriteView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,12 @@
 		C65286A71B9CB0FB003777F8 /* SpriteKitSKSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitSKSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65286AC1B9CB0FB003777F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C65286AD1B9CB0FB003777F8 /* SpriteKitSKSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitSKSTests.m; sourceTree = "<group>"; };
+		C65286B71B9CB179003777F8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C65286B81B9CB179003777F8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C65286BA1B9CB1BA003777F8 /* SpriteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteScene.h; sourceTree = "<group>"; };
+		C65286BB1B9CB1BA003777F8 /* SpriteScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteScene.m; sourceTree = "<group>"; };
+		C65286BC1B9CB1BA003777F8 /* SpriteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteView.h; sourceTree = "<group>"; };
+		C65286BD1B9CB1BA003777F8 /* SpriteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,11 +97,8 @@
 			children = (
 				C65286901B9CB0FB003777F8 /* AppDelegate.h */,
 				C65286911B9CB0FB003777F8 /* AppDelegate.m */,
-				C65286931B9CB0FB003777F8 /* GameScene.h */,
-				C65286941B9CB0FB003777F8 /* GameScene.m */,
-				C65286961B9CB0FB003777F8 /* GameScene.sks */,
-				C65286981B9CB0FB003777F8 /* GameViewController.h */,
-				C65286991B9CB0FB003777F8 /* GameViewController.m */,
+				C65286C41B9CB349003777F8 /* DefaultProject */,
+				C65286C51B9CB35A003777F8 /* SpriteKit */,
 				C652869B1B9CB0FB003777F8 /* Main.storyboard */,
 				C652869E1B9CB0FB003777F8 /* Images.xcassets */,
 				C65286A01B9CB0FB003777F8 /* LaunchScreen.xib */,
@@ -125,6 +131,31 @@
 				C65286AC1B9CB0FB003777F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C65286C41B9CB349003777F8 /* DefaultProject */ = {
+			isa = PBXGroup;
+			children = (
+				C65286931B9CB0FB003777F8 /* GameScene.h */,
+				C65286941B9CB0FB003777F8 /* GameScene.m */,
+				C65286961B9CB0FB003777F8 /* GameScene.sks */,
+				C65286981B9CB0FB003777F8 /* GameViewController.h */,
+				C65286991B9CB0FB003777F8 /* GameViewController.m */,
+			);
+			name = DefaultProject;
+			sourceTree = "<group>";
+		};
+		C65286C51B9CB35A003777F8 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				C65286B71B9CB179003777F8 /* ViewController.h */,
+				C65286B81B9CB179003777F8 /* ViewController.m */,
+				C65286BA1B9CB1BA003777F8 /* SpriteScene.h */,
+				C65286BB1B9CB1BA003777F8 /* SpriteScene.m */,
+				C65286BC1B9CB1BA003777F8 /* SpriteView.h */,
+				C65286BD1B9CB1BA003777F8 /* SpriteView.m */,
+			);
+			name = SpriteKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C652869A1B9CB0FB003777F8 /* GameViewController.m in Sources */,
+				C65286BF1B9CB1BA003777F8 /* SpriteView.m in Sources */,
 				C65286921B9CB0FB003777F8 /* AppDelegate.m in Sources */,
 				C65286951B9CB0FB003777F8 /* GameScene.m in Sources */,
+				C65286BE1B9CB1BA003777F8 /* SpriteScene.m in Sources */,
 				C652868F1B9CB0FB003777F8 /* main.m in Sources */,
+				C65286B91B9CB179003777F8 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

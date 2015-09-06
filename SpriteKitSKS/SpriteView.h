@@ -10,4 +10,6 @@
 
 @interface SpriteView : SKView
 
+-(void)renderEmojiString:(NSString*)string startPoint:(CGPoint)startPoint;
+
 @end
